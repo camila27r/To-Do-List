@@ -11,7 +11,7 @@ const Tasks = ({
   handleDelete: (id: string) => void;
 }) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-3">
       {tasks.length ? (
         tasks.map((t) => (
           <TaskItem
@@ -24,7 +24,7 @@ const Tasks = ({
           />
         ))
       ) : (
-        <span className="text-green-100">No Assignments!</span>
+        <span className="text-stone-700 font-semibold">No Assignments!</span>
       )}
     </div>
   );

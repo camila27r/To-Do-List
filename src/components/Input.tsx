@@ -8,16 +8,16 @@ const InputContainer = ({
   return (
     <form
       action=""
-      className="flex flex-col gap-4"
+      className="flex flex-col gap-3"
       onSubmit={(e) => {
         handleSubmit(e, newTaskName);
         setNewTaskName("");
       }}
     >
       <div className="flex flex-col">
-        <label className="text-white">Add a task:</label>
+        <label className="text-amber-50 font-bold">Add a task:</label>
         <input
-          className="p-1 rounded-sm"
+          className="p-2 bg-blue-100 rounded-sm"
           type="text"
           value={newTaskName}
           onChange={(e) => setNewTaskName(e.target.value)}
@@ -25,7 +25,7 @@ const InputContainer = ({
       </div>
       <button
         type="submit"
-        className="bg-green-100 rounded-lg hover:bg-green-200 p-1"
+        className="bg-sky-900 rounded-lg hover:bg-blue-400 p-1 text-amber-50"
       >
         Add task
       </button>

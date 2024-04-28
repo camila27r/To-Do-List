@@ -7,9 +7,9 @@ interface EverythingProps {
 
 const EveryItem = ({ itemName, itemValue }: EverythingProps) => {
   return (
-    <article className="bg-green-50 w-36 rounded-sm flex justify-between p-2">
-      <h3 className="font-bold">{itemName}</h3>
-      <span className="bg-green-900 text-white px-2 rounded-sm">
+    <article className="bg-blue-400 w-40 flex justify-between p-1">
+      <h3 className="font-bold text-stone-900">{itemName}</h3>
+      <span className="bg-sky-900 text-amber-50 px-3 rounded-sm">
         {itemValue}
       </span>
     </article>
